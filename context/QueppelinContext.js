@@ -1,5 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import { useMoralis, useMoralisQuery } from "react-moralis";
+import { ethers} from 'ethers'
+import { amazonAbi, amazonCoinAddress} from '../lib/constants'
 
 export const QueppelinContext = createContext()
 export const QueppelinProvider = ({ children }) => {
